@@ -1,0 +1,224 @@
+project:
+  name: "griddle"
+  description: "wordle inspired game where users guess F1 drivers using attribute based hints."
+  goals:
+    - Build an interactive guessing game with limited tries
+    - Provide clues such as number of wdc's , race wins, number of years competed, which country theyre from etc etc.
+    - Support daily challenges at some point
+    - Expand to user stats and leaderboards
+
+phases:
+
+  phase_1_mvp:
+    description: "frontend-only implementation with static dataset"
+    
+    components:
+      frontend:
+        tech: "Next.js"
+        responsibilities:
+          - render the UI (grid, input, results)
+          - handle user input (driver guesses)
+          - maintain game state (attempts, guesses)
+          - compute daily driver 
+          - compare guess vs target
+          - provide hints through colour-coding (yellow if kinda close, red if far, green if matched etc. etc. may expand on these clues later w other logics)
+
+      data_layer:
+        type: "Static JSON"
+        location: "/data/drivers.json"
+        contents:
+          - name
+          - nationality
+          - current_team
+          - past_teams
+          - championships
+          - debut_year
+
+    flow:
+      - "Load app"
+      - "Fetch drivers.json"
+      - "Compute daily driver"
+      - "User submits guess"
+      - "Frontend compares guess with target"
+      - "Render results"
+
+    pros:
+      - can build this phase quickly
+      - no backend required at all
+      - easy to debug and can get a working model quickly which can be further expanded 
+
+    cons:
+      - easy to inspect/cheat by inspecting the target
+      - Limited scalability as is with this phase. must expand (can also be seen as an advantage as this projet is purely for entertainment/learning purposes)
+
+
+  phase_2_backend:
+    description: "Introduce a golang backend for logic and validation"
+
+    components:
+      frontend:
+        tech: "Next.js"
+        responsibilities:
+          - UI rendering
+          - Send API requests
+          - Display results
+
+      backend:
+        tech: "Go (Gin mostly or net/http)"
+        responsibilities:
+          - Serve driver data
+          - Compute daily driver
+          - Validate guesses
+          - Return comparison results
+
+      data_layer:
+        type: "In-memory or JSON"
+        loading: "Loaded into backend at startup"
+
+    api_endpoints:
+      - method: GET
+        path: /daily
+        response: "{ driverId }"
+
+      - method: POST
+        path: /guess
+        request: "{ guessId }"
+        response: "{ comparison_result }"
+
+      - method: GET
+        path: /drivers
+        response: "[driver_list]"
+
+    flow:
+      - "Frontend requests daily driver"
+      - "User submits guess"
+      - "Backend compares guess with target"
+      - "Backend returns result"
+      - "Frontend renders result"
+
+    pros:
+      - prevents cheating to some extent
+      - its a centralized logic
+      - overall a cleaner architecture
+
+    cons:
+      - requires API management
+
+  phase_3_fullstack:
+    description: "Add SQL database and user features expanding on the phase_2"
+
+    components:
+      frontend:
+        tech: "Next.js"
+        responsibilities:
+          - UI
+          - API communication
+
+      backend:
+        tech: "Go"
+        responsibilities:
+          - Business logic
+          - Authentication (maybe way later if there is any need to but mostly no)
+          - Game validation
+          - Stats tracking (again optional may do later if i feel like doing it)
+
+      database:
+        type: "SQL (PostgreSQL/MySQL)"
+        tables:
+          drivers:
+            columns:
+              - id
+              - name
+              - nationality
+              - debut_year
+              - championships
+
+          teams:
+            columns:
+              - id
+              - name
+
+          driver_team_history:
+            columns:
+              - driver_id
+              - team_id
+              - year
+
+          user_stats:
+            columns:
+              - user_id
+              - games_played
+              - wins
+              - streak
+
+    flow:
+      - "Frontend calls backend APIs"
+      - "Backend queries database"
+      - "Backend computes results"
+      - "Frontend displays output"
+
+    pros:
+      - scalable 
+      - supports all kinda features if everything is embedded 
+      - persistent data
+
+    cons:
+      - will take time
+      - bit more complexity is involved
+
+
+game_logic: 
+  - "logic below is not fixed at all it is just a basic version to get things working, actual logic will be implemented later once the website is actually running"
+  attributes:
+    team:
+      rules:
+        - condition: "current_team matches"
+          result: "green"
+        - condition: "team exists in past_teams"
+          result: "yellow"
+        - condition: "no match"
+          result: "red"
+
+    nationality:
+      rules:
+        - condition: "exact match"
+          result: "green"
+        - condition: "no match"
+          result: "red"
+
+    championships:
+      rules:
+        - condition: "exact match"
+          result: "green"
+        - condition: "difference <= 1"
+          result: "yellow"
+        - condition: "otherwise"
+          result: "red"
+
+    debut_year:
+      rules:
+        - condition: "exact match"
+          result: "green"
+        - condition: "difference <= 2"
+          result: "yellow"
+        - condition: "otherwise"
+          result: "red"
+
+
+daily_driver:
+  strategy_phase_1:
+    type: "Deterministic"
+    method: "days_since_epoch % total_drivers"
+
+  strategy_phase_3:
+    type: "Database-driven"
+    method: "Backend selects and stores daily driver"
+
+
+future_features:
+  - User authentication (not anytime soon)
+  - Leaderboards
+  - Streak tracking
+  - Share results (Wordle-style)
+  - Multiplayer mode
+  - Admin panel for driver updates
