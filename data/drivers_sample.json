@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "code": "ALO",
+    "name": "Fernando Alonso",
+    "nationality": "Spanish",
+    "date_of_birth": "1981-07-29",
+    "team": "Aston Martin",
+    "past_teams": [
+      "Alpine",
+      "Ferrari",
+      "McLaren",
+      "Minardi"
+    ],
+    "car_number": 14,
+    "debut_year": 2001,
+    "wins": 32
+  },
+ 
