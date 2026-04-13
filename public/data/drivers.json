@@ -1,0 +1,617 @@
+[
+  {
+    "id": 1,
+    "code": "ALO",
+    "name": "Fernando Alonso",
+    "nationality": "Spanish",
+    "date_of_birth": "1981-07-29",
+    "team": "Aston Martin",
+    "past_teams": [
+      "Alpine",
+      "Ferrari",
+      "McLaren",
+      "Minardi"
+    ],
+    "car_number": 14,
+    "debut_year": 2001,
+    "wins": 32
+  },
+  {
+    "id": 2,
+    "code": "BOT",
+    "name": "Valtteri Bottas",
+    "nationality": "Finnish",
+    "date_of_birth": "1989-08-28",
+    "team": "Cadillac",
+    "past_teams": [
+      "Sauber",
+      "Mercedes",
+      "Williams"
+    ],
+    "car_number": 77,
+    "debut_year": 2013,
+    "wins": 10
+  },
+  {
+    "id": 3,
+    "code": "ERI",
+    "name": "Marcus Ericsson",
+    "nationality": "Swedish",
+    "date_of_birth": "1990-09-02",
+    "team": "Sauber",
+    "past_teams": [
+      "Caterham"
+    ],
+    "car_number": 9,
+    "debut_year": 2014,
+    "wins": 0
+  },
+  {
+    "id": 4,
+    "code": "GAS",
+    "name": "Pierre Gasly",
+    "nationality": "French",
+    "date_of_birth": "1996-02-07",
+    "team": "Alpine",
+    "past_teams": [
+      "RB",
+      "Red Bull"
+    ],
+    "car_number": 10,
+    "debut_year": 2017,
+    "wins": 1
+  },
+  {
+    "id": 5,
+    "code": "GRO",
+    "name": "Romain Grosjean",
+    "nationality": "French",
+    "date_of_birth": "1986-04-17",
+    "team": "Haas",
+    "past_teams": [
+      "Lotus F1",
+      "Alpine"
+    ],
+    "car_number": 8,
+    "debut_year": 2009,
+    "wins": 0
+  },
+  {
+    "id": 6,
+    "code": "HAM",
+    "name": "Lewis Hamilton",
+    "nationality": "British",
+    "date_of_birth": "1985-01-07",
+    "team": "Ferrari",
+    "past_teams": [
+      "McLaren",
+      "Mercedes"
+    ],
+    "car_number": 44,
+    "debut_year": 2007,
+    "wins": 105
+  },
+  {
+    "id": 7,
+    "code": "HAR",
+    "name": "Brendon Hartley",
+    "nationality": "New Zealander",
+    "date_of_birth": "1989-11-10",
+    "team": "RB",
+    "past_teams": null,
+    "car_number": 28,
+    "debut_year": 2017,
+    "wins": 0
+  },
+  {
+    "id": 8,
+    "code": "HUL",
+    "name": "Nico Hülkenberg",
+    "nationality": "German",
+    "date_of_birth": "1987-08-19",
+    "team": "Sauber",
+    "past_teams": [
+      "Aston Martin",
+      "Haas",
+      "Alpine",
+      "Williams"
+    ],
+    "car_number": 27,
+    "debut_year": 2010,
+    "wins": 0
+  },
+  {
+    "id": 9,
+    "code": "LEC",
+    "name": "Charles Leclerc",
+    "nationality": "Monegasque",
+    "date_of_birth": "1997-10-16",
+    "team": "Ferrari",
+    "past_teams": [
+      "Sauber"
+    ],
+    "car_number": 16,
+    "debut_year": 2018,
+    "wins": 8
+  },
+  {
+    "id": 10,
+    "code": "MAG",
+    "name": "Kevin Magnussen",
+    "nationality": "Danish",
+    "date_of_birth": "1992-10-05",
+    "team": "Haas",
+    "past_teams": [
+      "McLaren",
+      "Alpine"
+    ],
+    "car_number": 20,
+    "debut_year": 2014,
+    "wins": 0
+  },
+  {
+    "id": 11,
+    "code": "OCO",
+    "name": "Esteban Ocon",
+    "nationality": "French",
+    "date_of_birth": "1996-09-17",
+    "team": "Haas",
+    "past_teams": [
+      "Alpine",
+      "Aston Martin",
+      "Manor Marussia"
+    ],
+    "car_number": 31,
+    "debut_year": 2016,
+    "wins": 1
+  },
+  {
+    "id": 12,
+    "code": "PER",
+    "name": "Sergio Pérez",
+    "nationality": "Mexican",
+    "date_of_birth": "1990-01-26",
+    "team": "Cadillac",
+    "past_teams": [
+      "Aston Martin",
+      "McLaren",
+      "Red Bull",
+      "Sauber"
+    ],
+    "car_number": 11,
+    "debut_year": 2011,
+    "wins": 6
+  },
+  {
+    "id": 13,
+    "code": "RIC",
+    "name": "Daniel Ricciardo",
+    "nationality": "Australian",
+    "date_of_birth": "1989-07-01",
+    "team": "RB",
+    "past_teams": [
+      "HRT",
+      "McLaren",
+      "Red Bull",
+      "Alpine"
+    ],
+    "car_number": 3,
+    "debut_year": 2011,
+    "wins": 8
+  },
+  {
+    "id": 14,
+    "code": "RAI",
+    "name": "Kimi Räikkönen",
+    "nationality": "Finnish",
+    "date_of_birth": "1979-10-17",
+    "team": "Sauber",
+    "past_teams": [
+      "Ferrari",
+      "Lotus F1",
+      "McLaren"
+    ],
+    "car_number": 7,
+    "debut_year": 2001,
+    "wins": 21
+  },
+  {
+    "id": 15,
+    "code": "SAI",
+    "name": "Carlos Sainz",
+    "nationality": "Spanish",
+    "date_of_birth": "1994-09-01",
+    "team": "Williams",
+    "past_teams": [
+      "Ferrari",
+      "McLaren",
+      "Alpine",
+      "RB"
+    ],
+    "car_number": 55,
+    "debut_year": 2015,
+    "wins": 4
+  },
+  {
+    "id": 16,
+    "code": "SIR",
+    "name": "Sergey Sirotkin",
+    "nationality": "Russian",
+    "date_of_birth": "1995-08-27",
+    "team": "Williams",
+    "past_teams": null,
+    "car_number": 35,
+    "debut_year": 2018,
+    "wins": 0
+  },
+  {
+    "id": 17,
+    "code": "STR",
+    "name": "Lance Stroll",
+    "nationality": "Canadian",
+    "date_of_birth": "1998-10-29",
+    "team": "Aston Martin",
+    "past_teams": [
+      "Williams"
+    ],
+    "car_number": 18,
+    "debut_year": 2017,
+    "wins": 0
+  },
+  {
+    "id": 18,
+    "code": "VAN",
+    "name": "Stoffel Vandoorne",
+    "nationality": "Belgian",
+    "date_of_birth": "1992-03-26",
+    "team": "McLaren",
+    "past_teams": null,
+    "car_number": 2,
+    "debut_year": 2016,
+    "wins": 0
+  },
+  {
+    "id": 19,
+    "code": "VER",
+    "name": "Max Verstappen",
+    "nationality": "Dutch",
+    "date_of_birth": "1997-09-30",
+    "team": "Red Bull",
+    "past_teams": [
+      "RB"
+    ],
+    "car_number": 3,
+    "debut_year": 2015,
+    "wins": 71
+  },
+  {
+    "id": 20,
+    "code": "VET",
+    "name": "Sebastian Vettel",
+    "nationality": "German",
+    "date_of_birth": "1987-07-03",
+    "team": "Aston Martin",
+    "past_teams": [
+      "BMW Sauber",
+      "Ferrari",
+      "Red Bull",
+      "RB"
+    ],
+    "car_number": 5,
+    "debut_year": 2007,
+    "wins": 53
+  },
+  {
+    "id": 21,
+    "code": "ALB",
+    "name": "Alexander Albon",
+    "nationality": "Thai",
+    "date_of_birth": "1996-03-23",
+    "team": "Williams",
+    "past_teams": [
+      "Red Bull",
+      "RB"
+    ],
+    "car_number": 23,
+    "debut_year": 2019,
+    "wins": 0
+  },
+  {
+    "id": 22,
+    "code": "GIO",
+    "name": "Antonio Giovinazzi",
+    "nationality": "Italian",
+    "date_of_birth": "1993-12-14",
+    "team": "Sauber",
+    "past_teams": null,
+    "car_number": 99,
+    "debut_year": 2017,
+    "wins": 0
+  },
+  {
+    "id": 23,
+    "code": "KUB",
+    "name": "Robert Kubica",
+    "nationality": "Polish",
+    "date_of_birth": "1984-12-07",
+    "team": "Sauber",
+    "past_teams": [
+      "BMW Sauber",
+      "Alpine",
+      "Williams"
+    ],
+    "car_number": 88,
+    "debut_year": 2006,
+    "wins": 1
+  },
+  {
+    "id": 24,
+    "code": "KVY",
+    "name": "Daniil Kvyat",
+    "nationality": "Russian",
+    "date_of_birth": "1994-04-26",
+    "team": "RB",
+    "past_teams": [
+      "Red Bull"
+    ],
+    "car_number": 26,
+    "debut_year": 2014,
+    "wins": 0
+  },
+  {
+    "id": 25,
+    "code": "NOR",
+    "name": "Lando Norris",
+    "nationality": "British",
+    "date_of_birth": "1999-11-13",
+    "team": "McLaren",
+    "past_teams": null,
+    "car_number": 1,
+    "debut_year": 2019,
+    "wins": 11
+  },
+  {
+    "id": 26,
+    "code": "RUS",
+    "name": "George Russell",
+    "nationality": "British",
+    "date_of_birth": "1998-02-15",
+    "team": "Mercedes",
+    "past_teams": [
+      "Williams"
+    ],
+    "car_number": 63,
+    "debut_year": 2019,
+    "wins": 6
+  },
+  {
+    "id": 27,
+    "code": "AIT",
+    "name": "Jack Aitken",
+    "nationality": "British",
+    "date_of_birth": "1995-09-23",
+    "team": "Williams",
+    "past_teams": null,
+    "car_number": 89,
+    "debut_year": 2020,
+    "wins": 0
+  },
+  {
+    "id": 28,
+    "code": "FIT",
+    "name": "Pietro Fittipaldi",
+    "nationality": "Brazilian",
+    "date_of_birth": "1996-06-25",
+    "team": "Haas",
+    "past_teams": null,
+    "car_number": 51,
+    "debut_year": 2020,
+    "wins": 0
+  },
+  {
+    "id": 29,
+    "code": "LAT",
+    "name": "Nicholas Latifi",
+    "nationality": "Canadian",
+    "date_of_birth": "1995-06-29",
+    "team": "Williams",
+    "past_teams": null,
+    "car_number": 6,
+    "debut_year": 2020,
+    "wins": 0
+  },
+  {
+    "id": 30,
+    "code": "MAZ",
+    "name": "Nikita Mazepin",
+    "nationality": "Russian",
+    "date_of_birth": "1999-03-02",
+    "team": "Haas",
+    "past_teams": null,
+    "car_number": 9,
+    "debut_year": 2021,
+    "wins": 0
+  },
+  {
+    "id": 31,
+    "code": "MSC",
+    "name": "Mick Schumacher",
+    "nationality": "German",
+    "date_of_birth": "1999-03-22",
+    "team": "Haas",
+    "past_teams": null,
+    "car_number": 47,
+    "debut_year": 2021,
+    "wins": 0
+  },
+  {
+    "id": 32,
+    "code": "TSU",
+    "name": "Yuki Tsunoda",
+    "nationality": "Japanese",
+    "date_of_birth": "2000-05-11",
+    "team": "Red Bull",
+    "past_teams": [
+      "RB"
+    ],
+    "car_number": 22,
+    "debut_year": 2021,
+    "wins": 0
+  },
+  {
+    "id": 33,
+    "code": "ZHO",
+    "name": "Guanyu Zhou",
+    "nationality": "Chinese",
+    "date_of_birth": "1999-05-30",
+    "team": "Sauber",
+    "past_teams": null,
+    "car_number": 24,
+    "debut_year": 2022,
+    "wins": 0
+  },
+  {
+    "id": 34,
+    "code": "DEV",
+    "name": "Nyck de Vries",
+    "nationality": "Dutch",
+    "date_of_birth": "1995-02-06",
+    "team": "RB",
+    "past_teams": [
+      "Williams"
+    ],
+    "car_number": 21,
+    "debut_year": 2022,
+    "wins": 0
+  },
+  {
+    "id": 35,
+    "code": "LAW",
+    "name": "Liam Lawson",
+    "nationality": "New Zealander",
+    "date_of_birth": "2002-02-11",
+    "team": "RB",
+    "past_teams": [
+      "Red Bull"
+    ],
+    "car_number": 30,
+    "debut_year": 2023,
+    "wins": 0
+  },
+  {
+    "id": 36,
+    "code": "PIA",
+    "name": "Oscar Piastri",
+    "nationality": "Australian",
+    "date_of_birth": "2001-04-06",
+    "team": "McLaren",
+    "past_teams": null,
+    "car_number": 81,
+    "debut_year": 2023,
+    "wins": 9
+  },
+  {
+    "id": 37,
+    "code": "SAR",
+    "name": "Logan Sargeant",
+    "nationality": "American",
+    "date_of_birth": "2000-12-31",
+    "team": "Williams",
+    "past_teams": null,
+    "car_number": 2,
+    "debut_year": 2023,
+    "wins": 0
+  },
+  {
+    "id": 38,
+    "code": "ANT",
+    "name": "Andrea Kimi Antonelli",
+    "nationality": "Italian",
+    "date_of_birth": "2006-08-25",
+    "team": "Mercedes",
+    "past_teams": null,
+    "car_number": 12,
+    "debut_year": 2025,
+    "wins": 2
+  },
+  {
+    "id": 39,
+    "code": "BEA",
+    "name": "Oliver Bearman",
+    "nationality": "British",
+    "date_of_birth": "2005-05-08",
+    "team": "Haas",
+    "past_teams": [
+      "Ferrari"
+    ],
+    "car_number": 87,
+    "debut_year": 2024,
+    "wins": 0
+  },
+  {
+    "id": 40,
+    "code": "COL",
+    "name": "Franco Colapinto",
+    "nationality": "Argentine",
+    "date_of_birth": "2003-05-27",
+    "team": "Alpine",
+    "past_teams": [
+      "Williams"
+    ],
+    "car_number": 43,
+    "debut_year": 2024,
+    "wins": 0
+  },
+  {
+    "id": 41,
+    "code": "DOO",
+    "name": "Jack Doohan",
+    "nationality": "Australian",
+    "date_of_birth": "2003-01-20",
+    "team": "Alpine",
+    "past_teams": null,
+    "car_number": 7,
+    "debut_year": 2024,
+    "wins": 0
+  },
+  {
+    "id": 42,
+    "code": "BOR",
+    "name": "Gabriel Bortoleto",
+    "nationality": "Brazilian",
+    "date_of_birth": "2004-10-14",
+    "team": "Sauber",
+    "past_teams": null,
+    "car_number": 5,
+    "debut_year": 2025,
+    "wins": 0
+  },
+  {
+    "id": 43,
+    "code": "HAD",
+    "name": "Isack Hadjar",
+    "nationality": "French",
+    "date_of_birth": "2004-09-28",
+    "team": "Red Bull",
+    "past_teams": [
+      "RB"
+    ],
+    "car_number": 6,
+    "debut_year": 2025,
+    "wins": 0
+  },
+  {
+    "id": 44,
+    "code": "LIN",
+    "name": "Arvid Lindblad",
+    "nationality": "British",
+    "date_of_birth": "2007-08-08",
+    "team": "RB",
+    "past_teams": [
+      "Red Bull"
+    ],
+    "car_number": 41,
+    "debut_year": 2026,
+    "wins": 0
+  }
+]
