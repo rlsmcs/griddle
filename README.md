@@ -1,3 +1,4 @@
+```yaml
 project:
   name: griddle
   description: formula 1 guess the driver minigame
@@ -53,14 +54,13 @@ structure:
 deployment:
   platform: vercel
   type: frontend hosting
-  backend: external go service (used for dataset updates)
+  backend: external go service
 
 notes:
   - static driver dataset generated using a golang script
-  - dataset updated on a race-by-race basis with latest statistics again using the same golang script
-  - supports adding new drivers (currently includes data from 2018 onwards)
-  - game compares attributes such as nationality, team, age, debut, and wins
-  - six guess limit per session
-  - simple color and directional hint system
-  - color logic will be improved (e.g. better relative comparisons following the purple/green/yellow sector time colours in f1)
-  - ui is minimal, not to scale, and will be improved later
+  - dataset updated on a race-by-race basis using same golang script
+  - supports adding new drivers (2018 onwards)
+  - attribute comparison: nationality, team, age, debut, wins
+  - six guess limit
+  - simple color + directional hint system (later will update to correlate with the f1 sector times (purple,yellow,green,blue,black etc.))
+  - ui is minimal and will be improved
